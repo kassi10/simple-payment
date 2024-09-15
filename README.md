@@ -14,9 +14,22 @@ GET http://localhost:8000/api/users/2
 
 CREATE USER:
 POST http://localhost:8000/api/users
+{
+	"name" : "JOAO",
+  "cpf_cnpj":"2937328f38",
+	"email":"JOAO@sod.com",
+  "password":"123",
+  "type":"seller",
+	"balance":500
+}
 
 REALIZA TRANSAÇÃO
 POST http://localhost:8000/api/transaction
+{
+	"receiver_id":2,
+	"sender_id":1,
+	"amount":1
+}
 
 ## Testes -> apenas 1 teste realizado
 php artisan test
