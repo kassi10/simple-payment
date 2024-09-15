@@ -29,7 +29,7 @@ POST http://localhost:8000/api/transaction
 	"receiver_id":2,
 	"sender_id":1,
 	"amount":1
-}
+} 
 
 ## Testes -> apenas 1 teste realizado
 php artisan test
